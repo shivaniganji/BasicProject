@@ -1,0 +1,85 @@
+{
+  "posts": [
+    {
+      "id": 4,
+      "firstName": "asdfghjkl",
+      "lastName": "nmnbm",
+      "userName": "nmbnbm",
+      "password": "nmnmb@!QEE574577",
+      "dob": "2021-08-11",
+      "gender": "male"
+    },
+    {
+      "id": 5,
+      "firstName": "Shiva",
+      "lastName": "gjjjkj",
+      "userName": "ADSDSJ",
+      "password": "ADHHD!@1521254jnmn",
+      "dob": "2021-08-13",
+      "gender": "female"
+    },
+    {
+      "id": 6,
+      "firstName": "Shivani",
+      "lastName": "Ganji",
+      "userName": "asdfghjkl",
+      "password": "A!@sd456",
+      "dob": "2021-08-14",
+      "gender": "male"
+    },
+    {
+      "id": 7,
+      "firstName": "jhgj",
+      "lastName": "hjhgj",
+      "userName": "nmbnbm",
+      "password": "!@QW54gfgfh",
+      "dob": "2021-08-02",
+      "gender": "female"
+    },
+    {
+      "id": 8,
+      "firstName": "ythty",
+      "lastName": "ytyt",
+      "userName": "nmbnbm",
+      "password": "A!545fdgfdgfg",
+      "dob": "2021-08-06",
+      "gender": "female"
+    },
+    {
+      "id": 9,
+      "firstName": "fgf",
+      "lastName": "ty",
+      "userName": "nmbnbm",
+      "password": "dgfdgfd!@DSA5654",
+      "dob": "2021-08-06",
+      "gender": "male"
+    },
+    {
+      "id": 10,
+      "firstName": "fgd",
+      "lastName": "gffg",
+      "userName": "gffdg",
+      "password": "A!sadsa5454",
+      "dob": "2021-09-04",
+      "gender": "female"
+    },
+    {
+      "id": 11,
+      "firstName": "Shivani",
+      "lastName": "Ganji",
+      "userName": "asdfghjkl",
+      "password": "A!1asa5411",
+      "dob": "2021-09-28",
+      "gender": "female"
+    },
+    {
+      "id": 12,
+      "firstName": "",
+      "lastName": "",
+      "userName": "",
+      "password": "",
+      "dob": "",
+      "gender": ""
+    }
+  ]
+}

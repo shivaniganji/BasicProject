@@ -1,0 +1,6 @@
+.table tr.odd_col {
+	background: none;
+}
+.table tr.even_col {
+	background: #ddd;
+}

@@ -1,0 +1,38 @@
+[
+    {
+        "id": 17501,
+        "name": "Aishwarya",
+        "email": "aish@gmail.com",
+        "gender": "female"
+    },
+    {
+        "id": 17502,
+        "name": "Anitha",
+        "email": "anitha@gmail.com",
+        "gender": "female"
+    },
+    {
+        "id": 17503,
+        "name": "Aravind",
+        "email": "arvind@gmail.com",
+        "gender": "male"
+    },
+    {
+        "id": 17504,
+        "name": "Mamatha",
+        "email": "mamatha@gmail.com",
+        "gender": "female"
+    },
+    {
+        "id": 17505,
+        "name": "Shiva",
+        "email": "shiva@gmail.com",
+        "gender": "male"
+    },
+    {
+        "id": 17506,
+        "name": "Arjun",
+        "email": "arjun@gmail.com",
+        "gender": "male"
+    }
+]

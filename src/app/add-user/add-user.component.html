@@ -1,0 +1,119 @@
+<p>add-user works!</p>
+
+<form [formGroup]="userForm">
+    <div class="row">
+        <div class="form-group col-md-4">
+        </div>
+        <div class="form-group col-md-4">
+            <div class="card-header">
+                Register Here
+            </div>
+
+            <div class="form-group col">
+                <label for="firstName" class="form-label">First Name
+                    <label class="text-danger">*</label>
+                </label>
+                <input type="text" class="form-control" placeholder="First name" formControlName="firstName"
+                    id="firstName" required>
+                <div class="text-danger" *ngIf="(f.firstName.touched || submitted ) && f.firstName.errors?.required">
+                    FirstName required
+                </div>
+            </div>
+
+            <div class="form-group col">
+                <label for="lastName">Last Name
+                    <label class="text-danger">*</label>
+                </label>
+                <input type="text" class="form-control" placeholder="Last name" formControlName="lastName" required>
+                <div class="text-danger" *ngIf="(f.lastName.touched || submitted ) && f.lastName.errors?.required">
+                    LastName required
+                </div>
+            </div>
+            <div class="form-group col">
+                <label for="userName">User Name
+                    <label class="text-danger">*</label>
+                </label>
+                <input type="text" class="form-control" placeholder="User Name" formControlName="userName" required>
+
+                <div class="text-danger" *ngIf="(f.userName.touched || submitted ) && f.userName.errors?.required">
+                    User Name required
+                </div>
+            </div>
+
+            <div class="form-group col">
+                <label for="password">Password
+                    <label class="text-danger">*</label>
+                </label>
+                <input type="password" class="form-control" 
+                    placeholder="Password must be 8 characters of Alphanumeric" formControlName="password" required>
+
+                <div class="text-danger" *ngIf="(f.password.touched || submitted ) && f.password.errors?.required">
+                    Password required
+                </div>
+            </div>
+
+            <label for="dob">Date Of Birth
+                <label class="text-danger">*</label>
+            </label>
+            <input type="date" class="form-control" id="BirthDate" name="BirthDate" formControlName="dob" required>
+            <div class="text-danger" *ngIf="(f.dob.touched || submitted ) && f.dob.errors?.required">
+                Date Of Birth required
+            </div>
+
+            <label for="gender">Gender
+                <label class="text-danger">*</label>
+            </label>
+            <div class="text-danger" *ngIf="(f.gender.touched || submitted ) && f.gender.errors?.required">
+                Gender required
+            </div>
+            <div>
+                <input id="male" type="radio" class="custom-control-input" value="male" name="gender"
+                    formControlName="gender">
+                <label class="custom-control-label" for="male">Male</label>
+            </div>
+
+            <div>
+                <input id="female" type="radio" class="custom-control-input" value="female" name="gender"
+                    formControlName="gender">
+                <label class="custom-control-label" for="female">Female</label>
+            </div>
+            <div>
+                <input id="others" type="radio" class="custom-control-input" value="others" name="gender"
+                    formControlName="gender">
+                <label class="custom-control-label" for="others">Others</label>
+            </div>
+           
+            <button type="submit" class="btn btn-primary" 
+            *ngIf="showAdd"  (click)=" postUserDetails()">Submit</button>
+                 
+            &nbsp;
+            <button type="submit" class="btn btn-primary" *ngIf="showUpdate"
+            (click)=" updateUserDetails()">Update</button> 
+            &nbsp;
+            &nbsp;
+            <button type="reset" class="btn btn-primary" (click)="resetUser()">Reset</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 mt-4 mb-4">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr *ngFor="let item of userData ; let odd = odd" [ngClass]="odd ? 'odd_col' : 'even_col'">
+                        <td><span>{{item.id}}</span></td>
+                        <td><span>{{item.firstName}}</span></td>
+                        <td><span>{{item.lastName}}</span></td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
